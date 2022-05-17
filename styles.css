@@ -9,7 +9,8 @@
 
 body {
     /* background-image: linear-gradient(white, #faab6b); */
-    background: repeating-linear-gradient(to bottom, white, rgb(228, 217, 207) 30rem, white );
+    /* background: repeating-linear-gradient(to bottom, white, rgb(220, 129, 0) 30rem, white ); */
+    background: white;
 }
 
 .navbar {
@@ -365,7 +366,7 @@ h2.awards {
     text-align: center;
     color: #e46e0d;
     float: left;
-    width: 30%;
+    width: 15%;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;

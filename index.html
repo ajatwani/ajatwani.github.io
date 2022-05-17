@@ -50,7 +50,13 @@
         }
     }
 
-        h2.features {text-align: center; font-size: 2.5rem; color: #200668; margin-bottom: 3rem;}
+        h2.features {
+            text-align: center; font-size: 2.5rem; color: #200668; margin-top: 3rem;
+        }
+
+        span#solution {
+            font-size: 3rem;
+        }
 
         p.write {
             text-align: center;
@@ -60,19 +66,20 @@
 
         div.ljust {
             padding: 6rem;
-            
+            color: #200668
         }
 
         div.rjust {
             padding: 5rem;
+            color: #200668;
         }
 
         .lhead {
-            margin-left: 5rem;
+            margin-left: 3rem;
         }
 
         .lpara {
-            margin-left: 5rem;
+            margin-left: 3rem;
         }
 
         .rhead {
@@ -83,30 +90,112 @@
             margin-left: 40rem;
         }
 
-        div.solutions {
-            margin-bottom: 20rem;
-        }
-
-        .main {margin-bottom: 130rem;}
-
-        #payback {
-            background: linear-gradient(to bottom right, white, rgb(198, 162, 197) );
-            margin-bottom: 15rem;
-            margin-top: 5rem;
-        }
-
-        #busback {
-            background: linear-gradient(to bottom left, rgb(109, 141, 122), white );
-            margin-bottom: 15rem;
-        }
-
-        #compback {
-            background: linear-gradient(to bottom right, white, rgb(136, 125, 189));
-            margin-bottom: 15rem;
-        }
+        .main {margin-bottom: 120rem;}
 
         #capback {
-            background: linear-gradient(to bottom, rgb(228, 219, 111), white);
+            /* background: linear-gradient(to bottom, rgb(228, 221, 147), white); */
+        }
+
+        img.lpic {
+            float: right;
+            width: 45%;
+        }
+
+        ul.lbullet {
+            margin-top: 1rem;
+            margin-left: 4rem;
+            line-height: 2;
+        }
+
+        button#lpayment {
+            font-size: 1rem;
+            background-color: rgb(10, 114, 10);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            outline: none;
+            color: white;
+            margin-bottom: 2rem;
+            margin-left: 3rem;
+        }
+
+        #lpayment a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+        }
+
+        img.rpic {
+            float: left;
+            width: 45%;
+            margin-left: 3rem;
+        }
+
+        ul.rbullet {
+            margin-left: 41rem;
+            margin-top: 1rem;
+            line-height: 2;
+        }
+
+        button#rbusiness {
+            font-size: 1rem;
+            background-color: #e46e0d;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            outline: none;
+            color: white;
+            margin-bottom: 2rem;
+            margin-left: 7rem;
+        }
+
+        #rbusiness a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+        }
+
+        button#lcompliance {
+            font-size: 1rem;
+            background-color: rgb(10, 114, 10);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            outline: none;
+            color: white;
+            margin-bottom: 2rem;
+            margin-left: 3rem;
+        }
+
+        #lcompliance a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+        }
+
+        img#main_pic {
+            float: right;
+            width: 45%;
+            margin-right: 2rem;
+        }
+
+        h2.awacex {
+            display: inline;
+            margin: 0rem 8.1rem;
+            color: #200668;
+            font-size: 2rem;
         }
 
     </style>
@@ -134,13 +223,13 @@
                         </a>
                     </li>
                     <li class="navbar_item">
-                        <a href="payment.html" class="navbar_links">
-                            Payments
+                        <a href="business.html" class="navbar_links">
+                            Business
                         </a>
                     </li>
                     <li class="navbar_item">
-                        <a href="business.html" class="navbar_links">
-                            Business
+                        <a href="payment.html" class="navbar_links">
+                            Payments
                         </a>
                     </li>
                     <li class="navbar_item">
@@ -167,73 +256,108 @@
     <div class="main">
         <div class="main_index_container">
             <div class="main_content">
+                <img id = "main_pic" src = "main1.jpeg" alt = "Main Picture" title = "Main">
                 <h1 id = "title"> 
-                    Faster, convenient and cost-<br>effective <span class = "finance">access to finance</span>
+                    Faster, convenient and cost-<br>effective <span id = "solution" class = "finance">access to finance</span>
                 </h1>
                 <p id = "title">
                     Providing micro, small and medium enterprises
                     (MSMEs) with <br>access to affordable funding through digitization
                     of enterprise <br>operations and the funding decision process.
                 </p>
-                <button class="main_btn"><a href = "contact.htm">Request for Demo</a>
+                <button class="main_btn"><a href = "contact.html">Request a Demo</a>
                 </button>
-            </div>
 
+                
         <div id = "downloads">
             <span style = "white-space: nowrap;">
                 <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
                     <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
                 </a>
-                <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
                     <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
                 </a>
             </span>
-        </div>    
+        </div>   
+
+        </div>
+ 
 
             <h2 class = "features">
-                Capsule End-to-End <span class = "finance"> Business Solution</span>
+                Capsule's End-to-End <br> <span class = "finance"> Business Solution</span>
             </h2>
 
 
         <div class = "solutions">
             <div class = "ljust" id = "payback">
-                <!-- <img class = "lpic" src = "/" alt = "/" title = "/"> -->
+                <img class = "lpic" src = "bus.jpeg" alt = "pos" title = "pos">
                 <h2 class = "lhead">
-                    Payments
+                    Business
                 </h2>
                 <p class = "lpara">
-                    Make payments and generate a bank account for your company without visiting a bank!
+                    <!-- Generate a bank account for your company and make payments without visiting a bank. -->
+                    Manage your business inventory and keep track of all your financial statements!
                 </p>
+                <ul class = "lbullet">
+                    <li> Business Bookkeeping</li>
+                    <li> Financial Reports</li>
+                </ul>
+
+                <button id = "lpayment"><a href = "business.html">Get Started</a>
             </div>
 
             <div class = "rjust" id = "busback">
-                <!-- <img class = "rpic" src = "/" alt = "/" title = "/"> -->
+                <img class = "rpic" src = "pos.jpeg" alt = "business" title = "business">
                 <h2 class = "rhead">
-                    Business
+                    Payment
                 </h2>
                 <p class = "rpara">
-                    Manage your business inventory and keep track of all your financial statements!
+                    Generate a bank account for your company and make payments without visiting a bank.
                 </p>
+                <ul class = "rbullet">
+                    <li> Pay Bills </li>
+                    <li> Get eWallet (Bank Account)</li>
+                    <li> Receive Payment</li>
+                    <li> Operate a POS </li>
+                </ul>
+
+                <button id = "rbusiness"><a href = "payment.html">Get Started</a>
             </div>
 
             <div class = "ljust" id = "compback">
-                <!-- <img class = "lpic" src = "/" alt = "/" title = "/"> -->
+                <img class = "lpic" src = "comp.jpeg" alt = "compliance" title = "compliance">
                 <h2 class = "lhead">
                     Compliance
                 </h2>
                 <p class = "lpara">
                     Register your business and receive a tax identification number!
                 </p>
+                <ul class = "lbullet">
+                    <li> Business Registration </li>
+                    <li> Get Tax Identification Number (Nigeria Only) </li> 
+                    <li> Tax Remittance</li> 
+                </ul>
+
+                <button id = "lcompliance"><a href = "compliance.html">Get Started</a>
+
             </div>
 
             <div class = "rjust" id = "capback">
-                <!-- <img class = "rpic" src = "/" alt = "/" title = "/"> -->
+                <img class = "rpic" src = "cap.jpeg" alt = "capital" title = "capital">
                 <h2 class = "rhead">
                     Capital
                 </h2>
                 <p class = "rpara">
                     Generate your credit score and receive funding from esteemed institutions!
                 </p>
+
+                <ul class = "rbullet">
+                    <li> Rate Credit Worthiness</li>
+                    <li> Receive Funding</li>
+                    <li> Know Your Carbon Footprint</li>
+                </ul>
+
+                <button id = "rbusiness"><a href = "capital.html">Get Started</a>
             </div>
         </div>
         
@@ -289,54 +413,54 @@
 
     <!--Awards--> 
 <div class = "cardPicture">
-    <img src = "capsuleapp1.jpg" alt = "Our App!" id = "home">
-    <h2 class = "awards"> Awards </h2>
+    <h2 class = "awacex"> Awards</h2>
+    <h2 class = "awacex"> Accelerators </h2> 
+    <h2 class = "awacex"> Exhibitions </h2>
     <div class="cardContainer">
-        <div class="cardAward" >
+    <div class = "awards">
+        <div class="cardAward">
             <img  class = "awardPic" src = "awards.png" alt = "awards">
             <h2>NITDA</h2>
             <p> Startup Prize <br>April 2021 <br> Nigeria </p>
         </div>
-
         <div class="cardAward" >
             <img  class = "awardPic" src = "awards.png" alt = "awards">
             <h2>NCC</h2>
             <p> Startup Prize <br>December 2021 <br> Nigeria</p>
         </div>
-
-
-    <h2 class = "awards"> Accelerators </h2>
-    <div class="cardContainer">
+    </div>
+    <div class = "accelerators">
         <div class="cardAward" >
             <img  class = "awardPic" src = "rocket.png" alt = "awards">
             <h2>Starta VC</h2>
             <p> Accelerator <br> March 2022 <br> NYC, USA</p>
         </div>
-
         <div class="cardAward" >
             <img class = "awardPic" src = "rocket.png" alt = "awards">
             <h2>Keystone Bank</h2>
             <p> Accelerator <br>January 2022 <br>Nigeria </p>
         </div>
-
-    <h2 class = "awards"> Exhibitions</h2>
-    <div class = "cardContainer">
+    </div>
+    <div class = "exhibitions">
         <div class="cardAward" >
             <img  class = "awardPic" src = "exhibition1.png" alt = "awards">
             <h2>GITEX</h2>
             <p>October 2021 <br>Dubai, United Arab Emirates </p>
         </div>
-
         <div class="cardAward" >
             <img  class = "awardPic" src = "exhibition1.png" alt = "awards">
             <h2>LEAP</h2>
             <p>February 2022 <br>Riyadh, Saudi Arabia</p>
         </div>
-    </div>
-</div>
 
-</div>
-</div>
+        </div>
+
+        </div>
+    </div>
+
+
+
+
 
 <div class="footer-basic">
     <footer>
@@ -354,6 +478,8 @@
         </ul>
         <p class="copyright">©Capsule 2022. All rights reserved.</p>
     </footer>
+</div>
+</div>
 </div>
 </div>
 

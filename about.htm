@@ -15,10 +15,13 @@
     box-sizing: border-box;
     }
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 600px) {
       .column {
         width: 100%;
-        display: block;
+      }
+
+      .footer-basic {
+        margin-top: 200rem;
       }
 }
 
@@ -123,6 +126,10 @@
       margin-bottom: 5rem;
     }
 
+    div.main_content {
+      margin-bottom: 10rem;
+    }
+
 </style>
 <body>
   <div class = "content">
@@ -144,15 +151,15 @@
                         </a>
                     </li>
                     <li class="navbar_item">
-                        <a href="payment.html" class="navbar_links">
-                            Payments
-                        </a>
-                    </li>
-                    <li class="navbar_item">
                         <a href="business.html" class="navbar_links">
                             Business
                         </a>
                     </li>
+                    <li class="navbar_item">
+                      <a href="payment.html" class="navbar_links">
+                          Payments
+                      </a>
+                  </li>
                     <li class="navbar_item">
                         <a href="compliance.html" class="navbar_links">
                             Compliance
@@ -175,9 +182,17 @@
     <div class="main">
         <div class="main_container">
             <div class="main_content">
-                <!-- <h1 id = "about"> 
-                    About Us
-                </h1> -->
+                              
+                <div id = "vision">
+                  <h2 class = "hcontent">
+                    Our Vision
+                  </h2>
+                  <p class = "pcontent">
+                    To become the information infrastructure for SMEs’ funding decisioning.
+                  </p>
+                </div>
+
+
                 <div>
                   <h2 class = "hcontent">
                     Our Mission
@@ -187,15 +202,7 @@
                     conveniently and cost effectively.
                   </p>
                 </div>
-              
-                <div id = "vision">
-                  <h2 class = "hcontent">
-                    Our Vision
-                  </h2>
-                  <p class = "pcontent">
-                    To become the information infrastructure for SMEs’ funding decisioning.
-                  </p>
-                </div>
+
 
                 <div class="row2">
                   <div class="column2">
