@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Capsule </title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<style>
+    html {
+    box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+}
+
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      color: #200668;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      padding: 10px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .main_content {
+        color: #200668;
+    }
+
+    h1#vision {
+      text-align: center; margin-bottom: 3rem; margin-top: 8rem;
+    }
+
+    h5#ourv {
+      font-weight: bold; font-size: 1.5rem; margin-bottom: 10rem; margin-left: 3rem; margin-right: 3rem;
+    }
+
+    .row2 {
+      display: flex;
+    }
+
+    .column2 {
+      flex: 50%;
+    }
+
+    p#abt_content {
+      line-height: 1.5;
+    }
+
+    h3 {
+      text-align: center; font-size: 2rem; margin-bottom: 1rem; color: #200668; margin-top: 5rem;
+    }
+
+    h2.team {
+      text-align: center; font-size: 2.5rem; color: #e46e0d; margin-top: 5rem; margin-bottom: 2rem;
+    }
+
+    img.heads {
+      margin-left: auto; margin-right:auto; display: block;
+    }
+
+    h2.hcontent {
+      text-align: center;
+      margin-top: 5rem;
+      color: #e46e0d;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p.pcontent {
+      text-align: center;
+    }
+
+    div#vision {
+      margin-bottom: 3rem;
+    }
+
+    p#abt_content {
+      margin-right: 2rem;
+    }
+
+    span.highlight {
+      color: rgb(6, 127, 77);
+      font-weight: bold;
+    }
+
+    div.row {
+      margin-bottom: 5rem;
+    }
+
+</style>
+<body>
+  <div class = "content">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" id="navbar_logo"> 
+                <img src = "caplogo.png" alt = "logo" width = 150px;> 
+            </a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="about.htm" class="navbar_links">
+                            Company
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="payment.html" class="navbar_links">
+                            Payments
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="business.html" class="navbar_links">
+                            Business
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="compliance.html" class="navbar_links">
+                            Compliance
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="capital.html" class="navbar_links">
+                            Capital
+                        </a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target="_blank" rel="noopener noreferrer" class="button">
+                            Download
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <!-- <h1 id = "about"> 
+                    About Us
+                </h1> -->
+                <div>
+                  <h2 class = "hcontent">
+                    Our Mission
+                  </h2>
+                  <p class = "pcontent">
+                    Enable financial institutions and investors to make SMEs funding decisions faster, 
+                    conveniently and cost effectively.
+                  </p>
+                </div>
+              
+                <div id = "vision">
+                  <h2 class = "hcontent">
+                    Our Vision
+                  </h2>
+                  <p class = "pcontent">
+                    To become the information infrastructure for SMEs’ funding decisioning.
+                  </p>
+                </div>
+
+                <div class="row2">
+                  <div class="column2">
+                      
+                  </div>
+                  <div class="column2">
+                    <h2 class= "hcontent"> About Capsule</h2>
+                    <p id = "abt_content">
+                      Capsule is providing micro, small and medium enterprises (MSMEs) with access to affordable and stress-free funding by de-risking and lowering the cost of leading by funding institutions thereby closing the MSMEs funding gap. Our technology platform digitalizes MSMEs operations by automating MSME’s business and financial activities, enabling digitally driven MSMEs formalization which makes access to funds such a convenient exercise by granting financial institutions access to these MSMEs big data in a simplified format for convenient, faster and cost-effective lending/funding decision making. 
+    
+                      <br><br>Capsule is becoming a reliable and dependable premium MSMEs Data Infrastructure for lenders, investors and grant administrators across Nigeria, Africa and the world because Capsule has adopted a cost-effective end-to-end technology approach to systematically digitalize and formalize the unstructured MSMEs sector. This innovative approach is making the MSME sector attractive to investors and lenders as it significantly reduces MSMEs’ credit default rates with our embedded credit rating, e-KYC, structured analytics, lending/grant management and default predictive systems.
+                      
+                      <br><br>Additionally, our technology is redefining and enabling MSMEs formalization and funding approaches for Government of Nations and Financial institutions across the world.
+                      
+                      For MSMEs, Capsule means organized business processes and access, through a transparent and democratized process, access to the limitless opportunities of business finance. For funders, Capsule means a low risk, cost effective and faster funding decision making and fund management infrastructure regardless of the nature of the funding instruments such as loan, equity investment, grant or special purpose vehicles.
+                      
+                      <span class = "highlight"> With Capsule, you can't get MSMEs funding wrong!</span>
+                    </p> 
+                  </div>
+                </div>
+
+      <div class = "core">
+        <h2 class = "hcontent">
+          Core Values
+        </h2>
+        <div class="column">
+          <h3>
+            Appropriate
+          </h3> 
+        </div>
+          <div class="column">
+            <h3>
+              Reliable
+            </h3>
+          </div>
+          <div class="column">
+            <h3>
+              Innovative
+            </h3>
+          </div>
+        
+        <div class="row">
+          
+        </div>
+      </div>
+
+   
+        <h2 class = "team"> Our Team </h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img class = "heads" src="freeman.jpeg" alt="ID Freeman" style="width:65%">
+              <div class="container">
+                <h2>ID Freeman</h2>
+                <p class="title">Cofounder/Director</p>
+                <p> Product Development & Marketing</p>
+              </div>
+            </div>
+          </div>
+
+      <div class="column">
+        <div class="card">
+          <img class = "heads" src="charles.jpeg" alt="Charles O." style="width:50%">
+          <div class="container">
+            <h2>Charles O.</h2>
+            <p class="title">Cofounder/Director</p>
+            <p> Fundraising & Investment</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="card">
+          <img class = "heads" src="precious.jpeg" alt="ID Freeman" style="width:95%">
+          <div class="container">
+            <h2>Precious Benjamin</h2>
+            <p class="title">Growth and Marketing</p>
+          </div>
+        </div>
+      </div>
+
+            <div class="column">
+        <div class="card">
+          <img class = "heads" src="chinye.jpeg" alt="Chinye Ukwu" style="width:40%">
+          <div class="container">
+            <h2>Chinye Ukwu</h2>
+            <p class="title">Cofounder</p>
+            <p> Chief Technology Officer</p> 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="card">
+          <img class = "heads" src="aryan.jpg" alt="Aryan Jatwani" style="width:56%">
+          <div class="container">
+            <h2>Aryan Jatwani</h2>
+            <p class="title">Starta Associate</p>
+            <p> Web Developer</p>
+          </div>
+        </div>
+      </div>
+
+<div class="column">
+    <div class="card">
+      <img class = "heads" src="eren.jpeg" alt="Eren Isiktas" style="width:67%">
+      <div class="container">
+        <h2>Eren Isiktas</h2>
+        <p class="title">Starta Associate</p>
+        <p> Content Developer</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+    </div>
+
+    <div class="footer-basic">
+      <footer>
+          <div class="social">
+              <a href="https://www.instagram.com/capsuleapp2/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/capsule-business-technology/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-linkedin"></i></a>
+              <a href="https://twitter.com/capsuleapp2" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-twitter"></i></a>
+              <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="features.htm">Features</a></li>
+              <li class="list-inline-item"><a href="about.htm">About Us</a></li>
+              <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+              <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
+          </ul>
+          <p class="copyright">©Capsule 2022. All rights reserved.</p>
+      </footer>
+  </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

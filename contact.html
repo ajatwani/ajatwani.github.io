@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="contact-form/css/style.css">
+    <link rel = "stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+	</head>
+	<body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo"> 
+                    <img src = "caplogo.png" alt = "logo" width = 150px;> 
+                </a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                    <ul class="navbar_menu">
+                        <li class="navbar_item">
+                            <a href="about.htm" class="navbar_links">
+                                Company
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="payment.html" class="navbar_links">
+                                Payments
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="business.html" class="navbar_links">
+                                Business
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="compliance.html" class="navbar_links">
+                                Compliance
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="capital.html" class="navbar_links">
+                                Capital
+                            </a>
+                        </li>
+                        <li class="navbar_btn">
+                            <a href="https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target="_blank" rel="noopener noreferrer" class="button">
+                                Download
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row mb-5">
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-map-marker"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Address:</span> M.M Alkali Street, Off 4th Avenue CITEC VILLA, Gwarinpa, Abuja Nigeria </p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-phone"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Phone:</span> <a href="tel://1234567920">+2348030600827 <br>
+                                +49 15216856767</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-paper-plane"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Email:</span> <a href="mailto:admin@capsuleapp.net">admin@capsuleapp.net</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-globe"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Website</span> <a href="#">capsuleapp.net</a></p>
+				          </div>
+			          </div>
+							</div>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-md-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Contact Us</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+                                            <div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="company">Organization</label>
+													<input type="text" class="form-control" name="org" id="name" placeholder="Company">
+												</div>
+											</div>
+                                            <div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="industry">Industry</label>
+													<input type="text" class="form-control" name="industry" id="name" placeholder="Industry">
+												</div>
+											</div>
+                                            <div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="country">Country</label>
+													<input type="text" class="form-control" name="country" id="subject" placeholder="Country">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Message</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url(contact.jpg);">
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/capsuleapp2/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/capsule-business-technology/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-linkedin"></i></a>
+                <a href="https://twitter.com/capsuleapp2" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-twitter"></i></a>
+                <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="features.htm">Features</a></li>
+                <li class="list-inline-item"><a href="about.htm">About Us</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+                <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
+            </ul>
+            <p class="copyright">©Capsule 2022. All rights reserved.</p>
+        </footer>
+    </div>
+  <!-- End -->
+
+    <script src="contact-form/js/jquery.min.js"></script>
+    <script src="contact-form/js/popper.js"></script>
+    <script src="contact-form/js/bootstrap.min.js"></script>
+    <script src="contact-form/js/jquery.validate.min.js"></script>
+    <script src="contact-form/js/main.js"></script>
+
+	</body>
+</html>
+
