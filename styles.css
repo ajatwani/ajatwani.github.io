@@ -2,9 +2,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+
 }
 
 body {
@@ -34,8 +32,8 @@ body {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+    margin: 0;
+    padding: 0 2rem;
 }
 
 #navbar_logo
@@ -43,11 +41,6 @@ body {
     cursor: pointer;
     align-items: center;
     display: flex;
-}
-
-.fa-gem {
-    margin-right: 0.5rem;
-
 }
 
 .navbar_menu {
@@ -94,13 +87,13 @@ body {
     color: white;
     }
 
-    .button:hover {
+.button:hover {
         background: white;
         color: #e46e0d;
         transition: all 0.7s ease;
     }
 
-    .navbar_links:hover {
+.navbar_links:hover {
         color: #e46e0d;
     }
 
@@ -140,7 +133,7 @@ body {
     }
 
     #navbar_logo {
-        padding-left: 25px;
+        padding-left: 2rem;
         width: 150px;
     }
 
