@@ -9,21 +9,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <style>
-        .main {color: #200668}
 
-        h2#business {font-size: 3rem; text-align: center;}
+        h2#business {font-size: 3rem; text-align: center; color: #200668}
 
         span.sub {font-size: 2rem; font-weight: bold; color: #e46e0d}
 
-        p.feat {font-weight: bold; margin-bottom: 7rem; line-height: 2.8; margin-right: 38rem;}
+        p {
+            margin-bottom: 7rem; 
+            line-height: 2.8; 
+            color: #200668}
 
         p.p1 {margin-top: 2rem; margin-right: 38rem;}
 
         img#gplay {margin-top: 2.5rem;}
 
-        img.cols {float: right; width: 30%; height: 40rem; margin-right: 2rem; margin-top: 5rem;}
+        img.cols {width: 90%;}
 
-        .footer-basic {margin-top: 20rem;}
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img.gplay {
+            margin-top: 2.5rem;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 10rem;
+            }
+        }
+        
 
     </style>
 
@@ -76,28 +114,32 @@
         </div>
     </nav>
 
-    <div class = "main">
-        <div class="main_business">
-            <img class = "cols" src="business.jpg">
-            <h2 class = "features" id = "business">
-                Business
-            </h2>
-            <p class = "feat">
+    <h2 id = "business"> Business</h2>
+    <div class="row">
+        <div class="column">
+            <p>
                 <span class = "sub"> Business Bookkeeping </span> <br>
-                ✓Manage your business with 100% FREE Capsule Accounting suites to maintain your 
-                business inventory, sales, debt, assets, expenses, payroll, invoices, purchase order, 
-                and manage your staffs on the go through your mobile phone. <br>
-
+                    ✓Manage your business with 100% FREE Capsule Accounting suites to maintain your 
+                    business inventory, sales, debt, assets, expenses, payroll, invoices, purchase order, 
+                    and manage your staffs on the go through your mobile phone. <br>
                 <span class = "sub"> Financial Reports </span> <br>
-                ✓Generate your financial reports including Balance Sheet, Income and Cash flow Statements for FREE <br>
+                    ✓Generate your financial reports including Balance Sheet, Income and Cash flow Statements for FREE <br>
             
-                <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target = "_blank" rel = "nooponer noreferrer">
-                    <img src = "gplay.svg" id = "gplay" title = "Google Play Download">
-                </a>
+                <span style = "white-space: nowrap;">
+                    <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
+                    </a>
+                    <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
+                    </a>
+                </span>
             </p>
         </div>
-    </div>
 
+        <div class="column">
+            <img class = "cols" src = "bus.jpeg">
+        </div>
+      </div>
 
     <!-- Footer -->
     <div class="footer-basic">
@@ -109,12 +151,11 @@
                 <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="features.htm">Features</a></li>
                 <li class="list-inline-item"><a href="about.htm">About Us</a></li>
                 <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
                 <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
             </ul>
-            <p class="copyright">©Capsule 2022. All rights reserved.</p>
+            <p class="copyright" style="color:grey;">©Capsule 2022. All rights reserved.</p>
         </footer>
     </div>
 </div>

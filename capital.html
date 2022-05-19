@@ -9,21 +9,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <style>
-        .main {color: #200668}
-
-        h2#capital {font-size: 3rem; text-align: center;}
+        h2 {font-size: 3rem; text-align: center; color: #200668}
 
         span.sub {font-size: 2rem; font-weight: bold; color: #e46e0d}
 
-        p.feat {font-weight: bold; margin-bottom: 7rem; line-height: 2.8; margin-right: 38rem;}
+        img.cols {width: 100%;}
 
-        p.p1 {margin-top: 2rem; margin-right: 38rem;}
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
 
-        img#gplay {margin-top: 2.5rem;}
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
 
-        img.cols {float: right; width: 30%; height: 40rem; margin-right: 2rem; margin-top: 5rem;}
+        p {
+            line-height: 2;
+        }
 
-        .footer-basic {margin-top: 15rem;}
+        a {
+            text-decoration: none;
+        }
+
+        img.gplay {
+            margin-top: 2.5rem;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 10rem;
+            }
+        }
+
 
     </style>
 
@@ -76,13 +104,12 @@
         </div>
     </nav>
 
-    <div class = "main">
-        <div class="main_capital">
-            <img class = "cols" src="capital.jpg">
-            <h2 class = "features" id = "capital">
-                Capital
-            </h2>
-            <p class = "feat">
+
+    <h2 class = "features" id = "compliance"> Capital</h2>
+        
+    <div class="row">
+        <div class="column">
+            <p>
                 <span class = "sub">Rate Credit Worthiness</span> <br> 
                 ✓Generate your business credit worthiness and digital audit reports <br>
                 <span class = "sub"> Receive Funding</span> <br>
@@ -90,13 +117,20 @@
                 <span class = "sub">Know Your Carbon Footprint</span> <br>
                 ✓Calculate your Business Carbon footprint for FREE <br>
 
-                <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target = "_blank" rel = "nooponer noreferrer">
-                    <img src = "gplay.svg" id = "gplay" title = "Google Play Download">
-                </a>
+                <span style = "white-space: nowrap;">
+                    <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
+                    </a>
+                    <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
+                    </a>
+                </span>
             </p>
         </div>
-    </div>
-
+        <div class="column">
+            <img class = "cols" src = "capital.jpg">
+        </div>
+      </div>
 
     <!-- Footer -->
     <div class="footer-basic">
@@ -108,7 +142,6 @@
                 <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="features.htm">Features</a></li>
                 <li class="list-inline-item"><a href="about.htm">About Us</a></li>
                 <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
                 <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>

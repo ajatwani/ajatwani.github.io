@@ -9,6 +9,8 @@ body {
     /* background-image: linear-gradient(white, #faab6b); */
     /* background: repeating-linear-gradient(to bottom, white, rgb(220, 129, 0) 30rem, white ); */
     background: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .navbar {
@@ -140,7 +142,7 @@ body {
     .navbar_toggle .bar {
         width: 25px;
         height: 3px;
-        margin: 5px auto;
+        margin: 5px;
         transition: all 0.3s ease-in-out;
         background: #e46e0d;
     }
@@ -180,6 +182,15 @@ body {
         display: block;
         cursor: pointer;
         
+    }
+
+    .main_content {
+        width: 100%;
+    }
+
+    img.main_pic {
+        max-width: 100%;
+        height: auto;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {

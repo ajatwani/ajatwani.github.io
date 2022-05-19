@@ -9,16 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <style>
-        .main {color: #200668}
-        h2#compliance {font-size: 3rem; text-align: center;}
-        span.sub {font-size: 2rem; font-weight: bold; color: #e46e0d}
-        p.feat {font-weight: bold; margin-bottom: 7rem; line-height: 2.8; margin-right: 38rem;}
-        p.p1 {margin-top: 2rem; margin-right: 38rem;}
-        img#gplay {margin-top: 2.5rem;}
-        img.cols {float: right; width: 30%; height: 40rem; margin-right: 2rem; margin-top: 5rem;}
 
-        div.footer-basic {margin-top: 20rem;}
+        h2#compliance {font-size: 3rem; text-align: center; color: #200668}
+        span.sub {font-size: 2rem; font-weight: bold; color: #e46e0d}
+        img#gplay {margin-top: 2.5rem;}
+        img.cols {width: 100%}
+
+        div.footer-basic {margin-top: 5rem;}
         p.copyright {text-align: center;}
+                
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img.gplay {
+            margin-top: 2.5rem;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 10rem;
+            }
+        }
+
     </style>
 
 </head>
@@ -70,25 +107,30 @@
         </div>
     </nav>
 
-    <div class = "main">
-        <div class="main_compliance">
-            <img class = "cols" src = "compliance.jpg">
-            <h2 class = "features" id = "compliance">
-                Compliance
-            </h2>
-            <p class = "feat">
+    <h2 class = "features" id = "compliance"> Compliance</h2>
+        
+    <div class="row">
+        <div class="column">
+            <p>
                 <span class = "sub"> Business Registration </span> <br>
-                ✓Register your business with the appropriate Government Agency in your 
-                Country without visiting their office or engaging a lawyer through Capsule <br>
-                <span class = "sub"> Get Tax Identification Number (Nigeria only) </span> <br>
-                ✓Generate your Tax Identification Number from Capsule without visiting any office <br>
-
-                <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target = "_blank" rel = "nooponer noreferrer">
-                    <img src = "gplay.svg" id = "gplay" title = "Google Play Download">
-                </a>
-            </p>
+                       ✓Register your business with the appropriate Government Agency in your 
+                       Country without visiting their office or engaging a lawyer through Capsule <br>
+                       <span class = "sub"> Get Tax Identification Number (Nigeria only) </span> <br>
+                       ✓Generate your Tax Identification Number from Capsule without visiting any office <br>
+                <span id = "downloads" style = "white-space: nowrap;">
+                    <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
+                    </a>
+                    <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
+                    </a>
+                </span>
+           </p>
         </div>
-    </div>
+        <div class="column">
+            <img class = "cols" src = "comp.jpeg">
+        </div>
+      </div>
 
 
     <!-- Footer -->
@@ -111,5 +153,6 @@
     </div>
 </div>
     
+</div>
 </body>
 </html>

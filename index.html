@@ -11,17 +11,9 @@
     
     <style>
 
-        .rowPartner {
-            margin-left: 4rem;
-            margin-top: 5rem;
-            
-        }
-        img#home {
-            float:right;
-            display:inline;
-            width: 30%;
-            margin-top: 8rem;
-            margin-right: 2rem;
+        .font {
+            font-family: "Raleway";
+            color: #200668;
         }
 
         p#copyright {
@@ -31,24 +23,6 @@
         h2.overview {
             text-align: center;
         }
-
-        .column3 {
-        float: left;
-        width: 25%;
-        }
-
-        /* Clear floats after the columns */
-        .row3:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-
-        @media screen and (max-width: 600px) {
-        .column3 {
-            width: 100%;
-        }
-    }
 
         h2.features {
             text-align: center; font-size: 2.5rem; color: #200668; margin-top: 3rem;
@@ -62,55 +36,23 @@
             text-align: center;
         }
 
-        a {text-decoration: none;}
-
-        div.ljust {
-            padding: 6rem;
-            color: #200668
+        a {
+            text-decoration: none;
         }
 
-        div.rjust {
-            padding: 5rem;
-            color: #200668;
+        h2.subh {
+            color: #e46e0d;
+            font-size: 2rem;
         }
 
-        .lhead {
-            margin-left: 3rem;
-        }
-
-        .lpara {
-            margin-left: 3rem;
-        }
-
-        .rhead {
-            margin-left: 40rem;
-        }
-
-        .rpara {
-            margin-left: 40rem;
-        }
-
-        .main {margin-bottom: 120rem;}
-
-        #capback {
-            /* background: linear-gradient(to bottom, rgb(228, 221, 147), white); */
-        }
-
-        img.lpic {
-            float: right;
-            width: 45%;
-        }
-
-        ul.lbullet {
-            margin-top: 1rem;
-            margin-left: 4rem;
+        p.text {
             line-height: 2;
         }
 
-        button#lpayment {
+        button.lpayment {
             font-size: 1rem;
             background-color: rgb(10, 114, 10);
-            padding: 14px 32px;
+            padding: 1rem;
             border: none;
             border-radius: 5px;
             margin-top: 1.5rem;
@@ -119,29 +61,16 @@
             outline: none;
             color: white;
             margin-bottom: 2rem;
-            margin-left: 3rem;
         }
 
-        #lpayment a {
+        .lpayment a {
             position: relative;
             z-index: 2;
             text-decoration: none;
             color: white;
         }
 
-        img.rpic {
-            float: left;
-            width: 45%;
-            margin-left: 3rem;
-        }
-
-        ul.rbullet {
-            margin-left: 41rem;
-            margin-top: 1rem;
-            line-height: 2;
-        }
-
-        button#rbusiness {
+        button.rbusiness {
             font-size: 1rem;
             background-color: #e46e0d;
             padding: 14px 32px;
@@ -153,50 +82,89 @@
             outline: none;
             color: white;
             margin-bottom: 2rem;
-            margin-left: 7rem;
+            margin-left: 2rem;
         }
 
-        #rbusiness a {
+        .rbusiness a {
             position: relative;
             z-index: 2;
             text-decoration: none;
             color: white;
         }
 
-        button#lcompliance {
+        button.lcompliance {
             font-size: 1rem;
             background-color: rgb(10, 114, 10);
-            padding: 14px 32px;
+            padding: 1rem;
             border: none;
             border-radius: 5px;
             margin-top: 1.5rem;
             cursor: pointer;
             transition: all 0.4s ease;
-            outline: none;
             color: white;
             margin-bottom: 2rem;
-            margin-left: 3rem;
         }
 
-        #lcompliance a {
+        .lcompliance a {
             position: relative;
             z-index: 2;
             text-decoration: none;
             color: white;
         }
 
-        img#main_pic {
-            float: right;
-            width: 45%;
-            margin-right: 2rem;
-        }
-
         h2.awacex {
             display: inline;
-            margin: 0rem 8.1rem;
+            margin: 0rem 7.5rem;
             color: #200668;
             font-size: 2rem;
         }
+
+        img.cols {
+            width: 100%;
+        }
+
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        p. {
+            color: #200668;
+        }
+
+        .rowPartner {
+            margin-top: 5rem;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+
+            .cardAward {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .columnPartner {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 10rem;
+            }
+        }
+
 
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -252,11 +220,259 @@
     </nav>
 
     <!--End of Navbar-->
+
+<div class = "font">
+    <div class="row">
+        <div class="column">
+            <h1 id = "title"> 
+                Faster, convenient and cost-<br>effective <span id = "solution" class = "finance">access to finance</span>
+            </h1>
+            <p>
+                Providing micro, small and medium enterprises
+                (MSMEs) with <br>access to affordable funding through digitization
+                of enterprise <br>operations and the funding decision process. <br>
+                
+                <button class="main_btn">
+                    <a href = "contact.html">Request a Demo</a>
+                </button> <br>
+                <span style = "white-space: nowrap;">
+                    <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
+                    </a>
+                    <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
+                    </a>
+                </span>
+            </p>
+        </div>
+        <div class="column">
+            <img class = "cols" src = "team.jpeg">
+        </div>
+      </div>
+
+    <h2 class = "features">
+        Capsule's End-to-End <br> <span class = "finance"> Business Solution</span>
+    </h2>
+
+      <div class="row">
+        <div class="column">
+            <h2 class = "subh"> Business</h2>
+            <p class = "text">
+                Generate a bank account for your company and make payments without visiting a bank.
+                Manage your business inventory and keep track of all your financial statements!
+                <ul>
+                    <li> Business Bookkeeping</li>
+                    <br>
+                    <li> Financial Reports</li>
+                </ul>
+
+                <button class = "lpayment"><a href = "business.html">Get Started</a>
+                    </button>
+            </p>
+        </div>
+
+        <div class="column">
+            <img class = "cols" src = "bus.jpeg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <img class = "cols" src = "pos.jpeg">
+        </div>
+
+        <div class="column">
+            <h2 class = "subh"> Payments </h2>
+            <p class = "text">
+                Generate a bank account for your company and make payments without visiting a bank.
+                <ul>
+                    <li> Pay Bills </li>
+                    <br>
+                    <li> Get eWallet (Bank Account)</li>
+                    <br>
+                    <li> Receive Payment</li>
+                    <br>
+                    <li> Operate a POS </li>
+                </ul>
+                <button class = "rbusiness"><a href = "payment.html">Get Started</a>
+                    </button>
+            </p>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="column">
+            <h2 class = "subh"> Compliance </h2>
+            <p class = "text">
+                Register your business and receive a tax identification number!
+                <ul class = "lbullet">
+                    <li> Business Registration </li>
+                    <br>
+                    <li> Get Tax Identification Number (Nigeria Only) </li> 
+                    <br>
+                    <li> Tax Remittance</li> 
+                </ul>
+
+                <button class = "lcompliance"><a href = "compliance.html">Get Started</a>
+                    </button>
+            </p>
+        </div>
+        <div class="column">
+            <img class = "cols" src = "comp.jpeg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <img class = "cols" src = "capital.jpg" style="width: 90%;">
+        </div>
+        <div class="column">
+            <h2 class = "subh"> Capital </h2>
+            <p class = "text">
+                Generate your credit score and receive funding from esteemed institutions!
+
+                <ul>
+                    <li> Rate Credit Worthiness</li>
+                    <br>
+                    <li> Receive Funding</li>
+                    <br>
+                    <li> Know Your Carbon Footprint</li>
+                </ul>
+                <button class = "rbusiness"><a href = "capital.html">Get Started</a>
+                    </button>
+            </p>
+        </div>
+      </div>
+
+
+    <div class="rowPartner">
+        <div class="columnPartner">
+            <a href = "https://www.ncc.gov.ng/" target="_blank" rel="noopener noreferrer">
+            <img src="ncc.png" alt="Nigerian Communications Commission" style="width:60%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://nitda.gov.ng/" target="_blank" rel="noopener noreferrer">
+            <img src="nitda.png" alt="National Information Technology Development Agency" style="width:60%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://starta.vc/" target="_blank" rel="noopener noreferrer">
+            <img src="starta.png" alt="Starta VC" style="width:60%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://csed.org.ng" target="_blank" rel="noopener noreferrer">
+            <img src="csed.png" alt="Center for Strategic Enterprise Development" style="width:70%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://www.tonyelumelufoundation.org/" target="_blank" rel="noopener noreferrer">
+            <img src="elumelu.png" alt="Tony Elumelu Foundation" style="width:100%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
+            <img src="keystone.png" alt="Keystone Bank Nigeria" style="width:60%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
+            <img src="africansociety.png" alt="African Society of Cambridge University" style="width:60%">
+            </a>
+        </div>
+        <div class="columnPartner">
+            <a href = "https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">
+            <img src="cambridge.png" alt="Cambridge University" style="width:70%">
+            </a>
+        </div>
+    </div>
+
+    <!--Awards--> 
+<div class = "cardPicture">
+    <h2 class = "awacex"> Awards</h2>
+    <h2 class = "awacex"> Accelerators </h2> 
+    <h2 class = "awacex"> Exhibitions </h2>
+    <div class="cardContainer"> 
+        <div class="cardAward">
+            <img class = "awardPic" src = "awards.png" alt = "awards">
+            <h2>NITDA</h2>
+            <p> Startup Prize <br>April 2021 <br> Nigeria </p>
+        </div>
+        <div class="cardAward" >
+            <img class = "awardPic" src = "awards.png" alt = "awards">
+            <h2>NCC</h2>
+            <p> Startup Prize <br>December 2021 <br> Nigeria</p>
+        </div>
+    <div class = "accelerators">
+        <div class="cardAward" >
+            <img class = "awardPic" src = "rocket.png" alt = "awards">
+            <h2>Starta VC</h2>
+            <p> Accelerator <br> March 2022 <br> NYC, USA</p>
+        </div>
+        <div class="cardAward" >
+            <img class = "awardPic" src = "rocket.png" alt = "awards">
+            <h2>Keystone Bank</h2>
+            <p> Accelerator <br>January 2022 <br>Nigeria </p>
+        </div>
+    </div>
+    <div class = "exhibitions">
+        <div class="cardAward" >
+            <img class = "awardPic" src = "exhibition1.png" alt = "awards">
+            <h2>GITEX</h2>
+            <p>October 2021 <br>Dubai, United Arab Emirates </p>
+        </div>
+        <div class="cardAward">
+            <img class = "awardPic" src = "exhibition1.png" alt = "awards">
+            <h2>LEAP</h2>
+            <p>February 2022 <br>Riyadh, Saudi Arabia</p>
+        </div>
+
+        </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/capsuleapp2/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/capsule-business-technology/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-linkedin"></i></a>
+            <a href="https://twitter.com/capsuleapp2" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="about.htm">About Us</a></li>
+            <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+            <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
+        </ul>
+        <p class="copyright">©Capsule 2022. All rights reserved.</p>
+    </footer>
+</div>
+</div>
+
+
+    <script src="app.js"></script>
+    <script src = "script.js"></script>
+    <script src = "bootstrap.bundle.min.js"></script>
+    <script src = "jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
     <div class = "content">
     <div class="main">
         <div class="main_index_container">
             <div class="main_content">
-                <img id = "main_pic" src = "main1.jpeg" alt = "Main Picture" title = "Main">
+                <img id = "main_pic" src = "team.jpeg" alt = "Main Picture" title = "Main">
                 <h1 id = "title"> 
                     Faster, convenient and cost-<br>effective <span id = "solution" class = "finance">access to finance</span>
                 </h1>
@@ -283,19 +499,16 @@
         </div>
  
 
-            <h2 class = "features">
-                Capsule's End-to-End <br> <span class = "finance"> Business Solution</span>
-            </h2>
-
-
         <div class = "solutions">
-            <div class = "ljust" id = "payback">
-                <img class = "lpic" src = "bus.jpeg" alt = "pos" title = "pos">
+            <div class = "left">
+                <img class = "lpic" src = "bus.jpeg" alt = "Business" title = "pos">
+            </div>
+            <div class = "ljust" "right" id = "payback">
                 <h2 class = "lhead">
                     Business
                 </h2>
                 <p class = "lpara">
-                    <!-- Generate a bank account for your company and make payments without visiting a bank. -->
+                    Generate a bank account for your company and make payments without visiting a bank.
                     Manage your business inventory and keep track of all your financial statements!
                 </p>
                 <ul class = "lbullet">
@@ -359,164 +572,10 @@
 
                 <button id = "rbusiness"><a href = "capital.html">Get Started</a>
             </div>
-        </div>
-        
+        </div> 
+         -->
           <!--   <a href = "/" target = "_blank" rel = "noopener noreferrer">
                 <img src = "appstore.svg" id = "appstore" title = "appstore" alt = "appstore">
-            </a> -->
-        </div>
-    </div>
-
-
-    <div class="rowPartner">
-        <div class="columnPartner">
-            <a href = "https://www.ncc.gov.ng/" target="_blank" rel="noopener noreferrer">
-            <img src="ncc.png" alt="Nigerian Communications Commission" style="width:60%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://nitda.gov.ng/" target="_blank" rel="noopener noreferrer">
-            <img src="nitda.png" alt="National Information Technology Development Agency" style="width:60%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://starta.vc/" target="_blank" rel="noopener noreferrer">
-            <img src="starta.png" alt="Starta VC" style="width:60%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://csed.org.ng" target="_blank" rel="noopener noreferrer">
-            <img src="csed.png" alt="Center for Strategic Enterprise Development" style="width:70%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://www.tonyelumelufoundation.org/" target="_blank" rel="noopener noreferrer">
-            <img src="elumelu.png" alt="Tony Elumelu Foundation" style="width:100%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
-            <img src="keystone.png" alt="Keystone Bank Nigeria" style="width:60%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
-            <img src="africansociety.png" alt="African Society of Cambridge University" style="width:60%">
-            </a>
-        </div>
-        <div class="columnPartner">
-            <a href = "https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">
-            <img src="cambridge.png" alt="Cambridge University" style="width:70%">
             </a>
         </div>
     </div>
-
-    <!--Awards--> 
-<div class = "cardPicture">
-    <h2 class = "awacex"> Awards</h2>
-    <h2 class = "awacex"> Accelerators </h2> 
-    <h2 class = "awacex"> Exhibitions </h2>
-    <div class="cardContainer">
-    <div class = "awards">
-        <div class="cardAward">
-            <img  class = "awardPic" src = "awards.png" alt = "awards">
-            <h2>NITDA</h2>
-            <p> Startup Prize <br>April 2021 <br> Nigeria </p>
-        </div>
-        <div class="cardAward" >
-            <img  class = "awardPic" src = "awards.png" alt = "awards">
-            <h2>NCC</h2>
-            <p> Startup Prize <br>December 2021 <br> Nigeria</p>
-        </div>
-    </div>
-    <div class = "accelerators">
-        <div class="cardAward" >
-            <img  class = "awardPic" src = "rocket.png" alt = "awards">
-            <h2>Starta VC</h2>
-            <p> Accelerator <br> March 2022 <br> NYC, USA</p>
-        </div>
-        <div class="cardAward" >
-            <img class = "awardPic" src = "rocket.png" alt = "awards">
-            <h2>Keystone Bank</h2>
-            <p> Accelerator <br>January 2022 <br>Nigeria </p>
-        </div>
-    </div>
-    <div class = "exhibitions">
-        <div class="cardAward" >
-            <img  class = "awardPic" src = "exhibition1.png" alt = "awards">
-            <h2>GITEX</h2>
-            <p>October 2021 <br>Dubai, United Arab Emirates </p>
-        </div>
-        <div class="cardAward" >
-            <img  class = "awardPic" src = "exhibition1.png" alt = "awards">
-            <h2>LEAP</h2>
-            <p>February 2022 <br>Riyadh, Saudi Arabia</p>
-        </div>
-
-        </div>
-
-        </div>
-    </div>
-
-
-
-
-
-<div class="footer-basic">
-    <footer>
-        <div class="social">
-            <a href="https://www.instagram.com/capsuleapp2/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/capsule-business-technology/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-linkedin"></i></a>
-            <a href="https://twitter.com/capsuleapp2" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-twitter"></i></a>
-            <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-            <li class="list-inline-item"><a href="features.htm">Features</a></li>
-            <li class="list-inline-item"><a href="about.htm">About Us</a></li>
-            <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
-            <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
-        </ul>
-        <p class="copyright">©Capsule 2022. All rights reserved.</p>
-    </footer>
-</div>
-</div>
-</div>
-</div>
-
-    <!-- Footer Section -->
-<!-- 
-    <div class="footer_container">
-        <div class="footer_links">
-            <div class="footer_link_wrapper">
-                <div class="footer_link_items">
-                    <h2>About Us</h2>
-                    <a href = "about.htm">Our Team</a>
-                    <a href = "contact.html">Contact Us</a>
-                    <a href = "features.htm">Features</a>
-                    <a href = "faq.htm">FAQ</a>
-                </div>
-            </div>
-            <div class="footer_link_wrapper">
-
-                <div class="footer_link_items">
-                    <h2>Social Media</h2>
-                    <a href = "https://twitter.com/capsuleapp2" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href = "https://www.linkedin.com/company/capsule-business-technology/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href = "https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href = "https://www.instagram.com/capsuleapp2/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </div>
-            </div>
-        </div>
-
-        <p id = "copyright">© Capsule 2022. All rights reserved.</p>
-    </div>
- -->
-
-    <script src="app.js"></script>
-    <script src = "script.js"></script>
-    <script src = "bootstrap.bundle.min.js"></script>
-    <script src = "jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

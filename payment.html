@@ -10,19 +10,58 @@
 
     <style>
 
-        .main {color: #200668}
-
-        h2#payments {font-size: 3rem; text-align: center;}
+        h2 {font-size: 3rem; text-align: center; color: #200668}
 
         span.sub {font-size: 2rem; font-weight: bold; color: #e46e0d}
 
-        p {font-weight: bold; margin-bottom: 7rem; line-height: 2.8;}
+        p {font-weight: bold; margin-bottom: 7rem; line-height: 2.8; color: #200668}
 
-        p.p1 {margin-top: 2rem; margin-right: 38rem;}
+        p.para2 {
+            margin-top: 10rem;
+        }
 
         img#gplay {margin-top: 2.5rem;}
 
-        img.cols {float: right; width: 30%; height: 40rem; margin-right: 2rem; margin-top: 5rem;}
+        img.cols {width: 100%; height: 35rem;}
+
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img.gplay {
+            margin-top: 2.5rem;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 10rem;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -74,38 +113,37 @@
         </div>
     </nav>
 
-    <div class = "main">
-        <div class="main_payments">
-            <img class = "cols" src="payments.jpg">
-                <h2 class = "features" id = "payments"> 
-                    Payments
-                </h2>
-                <p class = "p1">
-                    <span class = "sub">Pay Bills</span> <br>
-                    ✓Pay all your business bill in one place including rent, data, airtime, 
-                    TV, electricity, fuel, tax, loan repayment, dividend, credits etc. <br>
+    <h2 class = "features" id = "compliance"> Payments</h2>
+        
+    <div class="row">
+        <div class="column">
+            <p>
+                <span class = "sub">Pay Bills</span> <br>
+                ✓Pay all your business bill in one place including rent, data, airtime, 
+                TV, electricity, fuel, tax, loan repayment, dividend, credits etc. <br>
 
-                    <span class = "sub">Get eWallet (Bank Account)</span> <br>
-                    ✓Automatically generate a Bank Account for your Business without visiting any Bank <br>
+                <span class = "sub">Get eWallet (Bank Account)</span> <br>
+                ✓Automatically generate a Bank Account for your Business without visiting any Bank <br>
 
-                <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target = "_blank" rel = "nooponer noreferrer">
-                    <img src = "gplay.svg" id = "gplay" title = "Google Play Download">
-                </p>
-
-                </a>
-                <p class = "p2">
-                    <span class = "sub"> Receive Payment </span><br> 
+                <span class = "sub"> Receive Payment </span><br> 
                     ✓Receive payment from your customers from across the country. <br>
-                </p>
-                <p class = "p3">
-                    <span class = "sub">Operate a POS </span><br>
-                    ✓Integrate Capsule POS for your payments <br>
-                </p>
-                <p class = "p4">
-                    
-                </p> 
+                <span class = "sub">Operate a POS </span><br>
+                ✓Integrate Capsule POS for your payments <br>
+
+                <span style = "white-space: nowrap;">
+                    <a href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm&hl=en&gl=US" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "gplay.svg" class = "gplay" title = "google play" alt = "google play">
+                    </a>
+                    <a href = "https://apps.apple.com/ng/app/capsule-business/id1609735371" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "appstore.svg" class = "appstore" title = "app store" alt = "app store">
+                    </a>
+                </span>
+            </p>
         </div>
-    </div>
+        <div class="column">
+            <img class = "cols" src = "pos.jpeg">
+        </div>
+      </div>
 
 
     <!-- Footer -->
@@ -118,12 +156,11 @@
                 <a href="https://www.facebook.com/capsuleapp2?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="features.htm">Features</a></li>
                 <li class="list-inline-item"><a href="about.htm">About Us</a></li>
                 <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
                 <li class="list-inline-item"><a href="faq.htm">FAQ</a></li>
             </ul>
-            <p class="copyright">©Capsule 2022. All rights reserved.</p>
+            <p class="copyright" style="color:grey;">©Capsule 2022. All rights reserved.</p>
         </footer>
     </div>
 </div>
