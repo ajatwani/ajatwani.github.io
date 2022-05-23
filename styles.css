@@ -13,13 +13,100 @@ body {
     margin-right: 1rem;
 }
 
-.navbar {
+    /* NAVBAR STYLING STARTS */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .nav-links a {
+        color: #200668;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    /* LOGO */
+    .logo {
+        font-size: 32px;
+    }
+    /* NAVBAR MENU */
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+    }
+    .menu li:hover {
+        border-radius: 1rem;
+        transition: 0.3s ease;
+    }
+    .menu li {
+        padding: 0.5rem 1rem;
+    }
+
+    a#button {
+        background-color: #e46e0d;
+        color: white;
+        padding: 1rem 1rem
+    }
+
+    a#button:hover {
+         background-color: white;
+         color: #e46e0d;
+         transition: 0.5s ease;
+    }
+
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+    /* CHECKBOX HACK */
+    input[type=checkbox]{
+        display: none;
+    } 
+
+    /*HAMBURGER MENU*/
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: white;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        color: #e46e0d;
+    }
+
+    }
+
+/* .navbar {
     background-color: white;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -64,7 +151,7 @@ body {
     justify-content: center;
     padding: 0 1.5rem;
     height: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -99,7 +186,7 @@ body {
         color: #e46e0d;
     }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
     .navbar_container {
         display: flex;
         justify-content: space-between;
@@ -205,9 +292,10 @@ body {
         transform: translateY(-8px) rotate(-45deg);
         
     }
-}
+} */
 
 /* End of Navabar */
+
 
 span.finance {
     color: rgb(6, 127, 77);
@@ -405,7 +493,7 @@ h2.awards {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
     .main_container {
         display: grid;
         grid-template-columns: auto;
@@ -428,7 +516,7 @@ h2.awards {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
     .main_content {
         text-align: center;
         margin-bottom: 3rem;

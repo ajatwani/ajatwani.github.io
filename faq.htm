@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
 
     <style>
+
+        a {
+            text-decoration: none;
+        }
         
         .faq-heading{
             border-bottom: #e46e0d;
@@ -71,140 +76,217 @@
             margin-top: 15rem;
         }
 
+
+        @media screen and (max-width: 800px) {
+            .main_content {
+                width: 100%;
+            }
+
+            .footer-basic {
+                display: flex;
+                margin-top: 20rem;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="index.html" id="navbar_logo"> 
-                <img src = "caplogo.png" alt = "logo" width = 150px;> 
+    <nav class="navbar" style="font-family: raleway">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href = "index.html">
+                <img src = "caplogo.png" alt = "logo" width="150px" style="cursor:pointer">
             </a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="about.htm" class="navbar_links">
-                            Company
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="business.html" class="navbar_links">
-                            Business
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="payment.html" class="navbar_links">
-                            Payments
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="compliance.html" class="navbar_links">
-                            Compliance
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="capital.html" class="navbar_links">
-                            Capital
-                        </a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target="_blank" rel="noopener noreferrer" class="button">
-                            Download
-                        </a>
-                    </li>
-                </ul>
         </div>
-    </nav>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links" style="list-style: none;">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="about.htm">Company</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="compliance.html">Compliance</a></li>
+            <li><a href="capital.html">Capital</a></li>
+            <li><a id = "button" href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm">Download</a></li>
+          </div>
+        </ul>
+      </nav>
 
-    <div class = "content">
-
-
-    <div class="main">
-        <div class="main_container">
-            <div class="main_content">
-                
-                <h1 class="faq-heading">FAQ's</h1>
-                <section class="faq-container">
-                    <div class="faq-one">
-                        <!-- faq question -->
-                        <h2 class="faq-page">What is Capsule?</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses</p>
-                        </div>
+      <!-- <section>
+          <div class="container">
+              <div class="accordion">
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
                     </div>
-                    <hr class="hr-line">
-                    <div class="faq-two">
-                        <!-- faq question -->
-                        <h2 class="faq-page"> What is the significance behind the name Capsule? </h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>It's called Capsule because it's like a medicine to the lack of financial records by small and medium businesses and their resultant exclusion from financial services which they actually require to grow, expand and contribute in Job creation thereby contributing in lifting people out of poverty across Africa
-                            </p>
-                        </div>
+                  </div>
+
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
                     </div>
-                    <hr class="hr-line">
-                    <div class="faq-three">
-                        <!-- faq question -->
-                        <h2 class="faq-page">Why is Capsule Free?</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>Capsule App is free and will forever remain free because it was created by a nonprofit organization called Center for Strategic Enterprise Development Ltd/GTE
-                            </p>
-                        </div>
-                    </div>  
+                  </div>
 
-                    <hr class="hr-line">
-                    <div class="faq-four">
-                        <!-- faq question -->
-                        <h2 class="faq-page">What are the career opportunities within Capsule?</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>You could join our fast growing team as an employee or a certified Consultant/Partner
-                            </p>
-                        </div>
-                    </div> 
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
+                    </div>
+                  </div>
 
-                    <hr class="hr-line">
-                    <div class="faq-five">
-                        <!-- faq question -->
-                        <h2 class="faq-page">What is Capsule Certified Consultants and Capsule Certified Partners?</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>CCCs are individuals while CCPs are institutions with CCCs that train business owners on how to use Capsule App as well as provide other consultancy services related to Capsule App to small businesses either at free or fee depending on the Consultants or partners' model
-                            </p>
-                        </div>
-                    </div> 
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
+                    </div>
+                  </div>
 
-                    <hr class="hr-line">
-                    <div class="faq-six">
-                        <!-- faq question -->
-                        <h2 class="faq-page">How can I become a Capsule Certified Consultant (CCC) or Capsule Certified Partner (CCP)</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>
-                                <a href = "https://docs.google.com/forms/d/e/1FAIpQLSflXbi6gclEn8GnKbUL1jnsj8K_SDtAyehtvIAaOefu340oSg/viewform"> Click here </a>to apply for CCC or CCP training and Certification Examination here
-                            </p>
-                        </div>
-                    </div> 
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
+                    </div>
+                  </div>
 
-                    <hr class="hr-line">
-                    <div class="faq-seven">
-                        <!-- faq question -->
-                        <h2 class="faq-page">What is Capsule's revenue model?</h1>
-                        <!-- faq answer -->
-                        <div class="faq-body">
-                            <p>
-                                Capsule App revenue model is integrated within the optional advanced features of the App which does not affect the free features of the app listed above; the App is not primarily a money making venture because of the involvement of a non-profit organization in the management however, the advanced features are integrated to sustain the App infrastructures in order to have the App offering services for free.
-                            </p>
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" id = "#question1">
+                    <a class = "accordion" href = "#question1">
+                        What is Capsule?
+                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section> -->
+
+
+      <div class = "content">
+
+
+        <div class="main">
+            <div class="main_container">
+                <div class="main_content">
+                    
+                    <h1 class="faq-heading">FAQ's</h1>
+                    <section class="faq-container">
+                        <div class="faq-one">
+                            <!-- faq question -->
+                            <h2 class="faq-page">What is Capsule?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>Capsule App is a simplified free accounting, HR, Discount based e-commerce and rating mobile application for small and medium businesses</p>
+                            </div>
                         </div>
-                    </div> 
+                        <hr class="hr-line">
+                        <div class="faq-two">
+                            <!-- faq question -->
+                            <h2 class="faq-page"> What is the significance behind the name Capsule? </h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>It's called Capsule because it's like a medicine to the lack of financial records by small and medium businesses and their resultant exclusion from financial services which they actually require to grow, expand and contribute in Job creation thereby contributing in lifting people out of poverty across Africa
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-three">
+                            <!-- faq question -->
+                            <h2 class="faq-page">Why is Capsule Free?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>Capsule App is free and will forever remain free because it was created by a nonprofit organization called Center for Strategic Enterprise Development Ltd/GTE
+                                </p>
+                            </div>
+                        </div>  
+    
+                        <hr class="hr-line">
+                        <div class="faq-four">
+                            <!-- faq question -->
+                            <h2 class="faq-page">What are the career opportunities within Capsule?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>You could join our fast growing team as an employee or a certified Consultant/Partner
+                                </p>
+                            </div>
+                        </div> 
+    
+                        <hr class="hr-line">
+                        <div class="faq-five">
+                            <!-- faq question -->
+                            <h2 class="faq-page">What is Capsule Certified Consultants and Capsule Certified Partners?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>CCCs are individuals while CCPs are institutions with CCCs that train business owners on how to use Capsule App as well as provide other consultancy services related to Capsule App to small businesses either at free or fee depending on the Consultants or partners' model
+                                </p>
+                            </div>
+                        </div> 
+    
+                        <hr class="hr-line">
+                        <div class="faq-six">
+                            <!-- faq question -->
+                            <h2 class="faq-page">How can I become a Capsule Certified Consultant (CCC) or Capsule Certified Partner (CCP)</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>
+                                    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSflXbi6gclEn8GnKbUL1jnsj8K_SDtAyehtvIAaOefu340oSg/viewform"> Click here </a>to apply for CCC or CCP training and Certification Examination here
+                                </p>
+                            </div>
+                        </div> 
+    
+                        <hr class="hr-line">
+                        <div class="faq-seven">
+                            <!-- faq question -->
+                            <h2 class="faq-page">What is Capsule's revenue model?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>
+                                    Capsule App revenue model is integrated within the optional advanced features of the App which does not affect the free features of the app listed above; the App is not primarily a money making venture because of the involvement of a non-profit organization in the management however, the advanced features are integrated to sustain the App infrastructures in order to have the App offering services for free.
+                                </p>
+                            </div>
+                        </div> 
+                </div>
             </div>
         </div>
-    </div>
+        
+      
     
     <div class="footer-basic">
         <footer>
@@ -224,6 +306,8 @@
     </div>
     
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
     <script src="app.js"></script>
 </body>
 </html>

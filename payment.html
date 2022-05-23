@@ -39,6 +39,7 @@
 
         p {
             line-height: 2;
+            font-weight: normal;
         }
 
         a {
@@ -66,14 +67,39 @@
 
 </head>
 <body>
-<div class = "content">
+    <div class = "content">
+        <nav class="navbar" style="font-family: raleway">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href = "index.html">
+                    <img src = "caplogo.png" alt = "logo" width="150px" style="cursor:pointer">
+                </a>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links" style="list-style: none;">
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="about.htm">Company</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="compliance.html">Compliance</a></li>
+                <li><a href="capital.html">Capital</a></li>
+                <li><a id = "button" href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm">Download</a></li>
+              </div>
+            </ul>
+          </nav>
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar_container">
             <a href="index.html" id="navbar_logo"> 
                 <img src = "caplogo.png" alt = "logo" width = 150px;> 
             </a>
             <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -111,7 +137,7 @@
                     </li>
                 </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <h2 class = "features" id = "compliance"> Payments</h2>
         

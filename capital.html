@@ -59,50 +59,29 @@
 <body>
 <div class = "content">
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="index.html" id="navbar_logo"> 
-                <img src = "caplogo.png" alt = "logo" width = 150px;> 
+    <nav class="navbar" style="font-family: raleway">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href = "index.html">
+                <img src = "caplogo.png" alt = "logo" width="150px" style="cursor:pointer">
             </a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="about.htm" class="navbar_links">
-                            Company
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="business.html" class="navbar_links">
-                            Business
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="payment.html" class="navbar_links">
-                            Payments
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="compliance.html" class="navbar_links">
-                            Compliance
-                        </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="capital.html" class="navbar_links">
-                            Capital
-                        </a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="https://play.google.com/store/apps/details?id=com.tribesquare.mbm" target="_blank" rel="noopener noreferrer" class="button">
-                            Download
-                        </a>
-                    </li>
-                </ul>
         </div>
-    </nav>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links" style="list-style: none;">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="about.htm">Company</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="compliance.html">Compliance</a></li>
+            <li><a href="capital.html">Capital</a></li>
+            <li><a id = "button" href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm">Download</a></li>
+          </div>
+        </ul>
+      </nav>
 
 
     <h2 class = "features" id = "compliance"> Capital</h2>

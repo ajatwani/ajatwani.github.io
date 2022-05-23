@@ -114,9 +114,9 @@
 
         h2.awacex {
             display: inline;
-            margin: 0rem 7.5rem;
+            padding: 0rem 8.7rem;
             color: #200668;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         img.cols {
@@ -174,7 +174,30 @@
 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" style="font-family: raleway">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href = "index.html">
+                <img src = "caplogo.png" alt = "logo" width="150px" style="cursor:pointer">
+            </a>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links" style="list-style: none;">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="about.htm">Company</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="compliance.html">Compliance</a></li>
+            <li><a href="capital.html">Capital</a></li>
+            <li><a id = "button" href = "https://play.google.com/store/apps/details?id=com.tribesquare.mbm">Download</a></li>
+          </div>
+        </ul>
+      </nav>
+    <!-- <nav class="navbar">
         <div class="navbar_container">
             <a href="index.html" id="navbar_logo"> 
                 <img src = "caplogo.png" alt = "logo" width = 150px;> 
@@ -217,7 +240,7 @@
                     </li>
                 </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <!--End of Navbar-->
 
@@ -345,45 +368,49 @@
       </div>
 
 
+      <h2 style="text-align: center; font-size: 2.5rem;"> Partners </h2>
+
+      <h4 style = "font-weight: normal;"> Our partnerships are wide and diverse.</h4>
+
     <div class="rowPartner">
         <div class="columnPartner">
             <a href = "https://www.ncc.gov.ng/" target="_blank" rel="noopener noreferrer">
-            <img src="ncc.png" alt="Nigerian Communications Commission" style="width:60%">
+            <img src="ncc.png" alt="Nigerian Communications Commission" style="width:40%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://nitda.gov.ng/" target="_blank" rel="noopener noreferrer">
-            <img src="nitda.png" alt="National Information Technology Development Agency" style="width:60%">
+            <img src="nitda.png" alt="National Information Technology Development Agency" style="width:40%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://starta.vc/" target="_blank" rel="noopener noreferrer">
-            <img src="starta.png" alt="Starta VC" style="width:60%">
+            <img src="starta.png" alt="Starta VC" style="width:40%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://csed.org.ng" target="_blank" rel="noopener noreferrer">
-            <img src="csed.png" alt="Center for Strategic Enterprise Development" style="width:70%">
+            <img src="csed.png" alt="Center for Strategic Enterprise Development" style="width:50%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://www.tonyelumelufoundation.org/" target="_blank" rel="noopener noreferrer">
-            <img src="elumelu.png" alt="Tony Elumelu Foundation" style="width:100%">
+            <img src="elumelu.png" alt="Tony Elumelu Foundation" style="width:90%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
-            <img src="keystone.png" alt="Keystone Bank Nigeria" style="width:60%">
+            <img src="keystone.png" alt="Keystone Bank Nigeria" style="width:40%">
             </a>
         </div>
         <div class="columnPartner">
-            <a href = "https://www.keystonebankng.com/" target="_blank" rel="noopener noreferrer">
-            <img src="africansociety.png" alt="African Society of Cambridge University" style="width:60%">
+            <a href = "https://www.africansocietycambridge.org/" target="_blank" rel="noopener noreferrer">
+            <img src="africansociety.png" alt="African Society of Cambridge University" style="width:40%">
             </a>
         </div>
         <div class="columnPartner">
             <a href = "https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">
-            <img src="cambridge.png" alt="Cambridge University" style="width:70%">
+            <img src="cambridge.png" alt="Cambridge University" style="width:60%">
             </a>
         </div>
     </div>
@@ -432,9 +459,6 @@
 
         </div>
     </div>
-
-
-
 
 
 <div class="footer-basic">
